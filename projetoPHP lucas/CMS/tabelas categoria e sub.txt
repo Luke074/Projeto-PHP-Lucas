@@ -1,0 +1,81 @@
+<div class="caixaProduto">
+                            <table class="tblProdutos">
+                                <tr>
+                                    <td class="tblProdutosTitulo" colspan="2">
+                                        <h1>Categoria</h1>
+                                    </td>
+                                </tr>
+                                <tr class="tblProdutosLinha">
+                                    <td class="tblProdutosColunaFixa"> Nome </td>
+                                    <td class="tblProdutosColunaFixa"> Opcões </td>
+                                </tr>
+                                    <?php
+                                        // Script para buscar todos os dados no banco de dados
+                                        $sql = "
+                                                select tblcategoria.idCategoria, 
+                                                tblcategoria.nome, tblcategoria.statusCategoria from tblcategoria order 
+                                                by tblcategoria.idCategoria desc;
+                                                ";
+
+                                        $select = mysqli_query($conex, $sql);
+                                        
+                                        while($rsContatos= mysqli_fetch_assoc($select))
+                                        {  
+                                        ?>
+                                        <tr class="tblProdutosLinha">
+                                            <td class="tblProdutosColuna"> <?=$rsContatos['nome']?> </td>
+                                            <td class="tblProdutosColuna">
+                                                <a href="../site/bd/excluirCategoria.php?modo=excluir&id=<?=$rsContatos['idCategoria']?>" onclick="return confirm('Deseja realmente excluir esse Registro?')">
+                                                    <img src="img/icons/trash.png" class="imgicon" alt="Excluir">
+                                                </a>
+                                                <a href="../site/bd/ativarDesativarCategoria.php?modo=status&id=<?=$rsContatos['idCategoria']?>&status=<?=$rsContatos['statusCategoria']?>">
+                                                    <img src="img/icons/<?=$rsContatos['statusCategoria']?>.png" class="imgicon" alt="ativar/desativar">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    ?>
+                            </table>
+                        </div>
+                        <div class="caixaProduto">
+
+                            <table class="tblProdutos">
+                                <tr>
+                                    <td class="tblProdutosTitulo" colspan="2">
+                                        <h1>Categoria</h1>
+                                    </td>
+                                </tr>
+                                <tr class="tblProdutosLinha">
+                                    <td class="tblProdutosColunaFixa"> Nome </td>
+                                    <td class="tblProdutosColunaFixa"> Opcões </td>
+                                </tr>
+                                    <?php
+                                        // Script para buscar todos os dados no banco de dados
+                                        $sql = "
+                                                select tblsubcategoria.idSubcategoria, 
+                                                tblsubcategoria.nome, tblsubcategoria.statusSubcategoria from tblsubcategoria order 
+                                                by tblsubcategoria.idSubcategoria desc;
+                                                ";
+
+                                        $select = mysqli_query($conex, $sql);
+                                        
+                                        while($rsContatos= mysqli_fetch_assoc($select))
+                                        {  
+                                        ?>
+                                        <tr class="tblProdutosLinha">
+                                            <td class="tblProdutosColuna"> <?=$rsContatos['nome']?> </td>
+                                            <td class="tblProdutosColuna">
+                                                <a href="../site/bd/excluirSubcategoria.php?modo=excluir&id=<?=$rsContatos['idSubcategoria']?>" onclick="return confirm('Deseja realmente excluir esse Registro?')">
+                                                    <img src="img/icons/trash.png" class="imgicon" alt="Excluir">
+                                                </a>
+                                                <a href="../site/bd/ativarDesativarCategoria.php?modo=status&id=<?=$rsContatos['idSubcategoria']?>&status=<?=$rsContatos['statusSubcategoria']?>">
+                                                    <img src="img/icons/<?=$rsContatos['statusCategoria']?>.png" class="imgicon" alt="ativar/desativar">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                        }
+                                    ?>
+                            </table>
+                        </div>

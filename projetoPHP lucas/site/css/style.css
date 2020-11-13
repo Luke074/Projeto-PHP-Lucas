@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: top 0.5s;
+}
+.centerheader{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.logoHeader img{
+    float: left;
+    margin-left: 20px;
+    width: 75px;
+    height: 75px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+.topicosMenu {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+#login {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+a:link{
+    color: rgb(255, 255, 255);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: #5870cb;
+}
+a:active{
+    color: rgb(180, 25, 25);
+}
+
+input {
+    margin-top: 3px;
+    height: 28px;
+}
+
+.caixaLogin {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.barraLogin {
+    width: 150px;
+    max-width: 170px;
+}
+
+#caixaBotao {
+    float: left;
+    margin-top: 20px;
+}
+.tituloLoja{
+    float: left;
+    margin-left: 10px;
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tituloLoja:hover{
+    color: #ffc1e3;
+}
+
+#caixaConteudo {
+    background-color: rgba(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #000000;
+    width: 850px;
+    min-height: 2010px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+
+#slideShow {
+    width: inherit;
+    height: 260px;
+    box-sizing: content-box;
+    padding-top: 75px;
+}
+
+#lateralMenu {
+    border: solid 1px #000000;
+    width: 200px;
+    height: 600px;
+    float: left;
+    padding-top: 5px;
+}
+
+.items {
+    box-sizing: border-box;
+    width: inherit;
+    height: 60px;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.9s;
+}
+.items:hover{
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+    border-radius: 7px;
+    box-shadow: 5px 3px 8px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.subItems{
+    width: 500px;
+    height: 120px;
+    background-color: rgb(248, 248, 248);
+    font-size: 20px;
+    margin-left: 180px;
+    margin-top: -40px;
+    font-weight: bold;
+    display: none;
+    border-radius: 10px;
+    border: solid 1px #000000;
+}
+.items:hover> .subItems{
+    display: block;
+    position: absolute;
+}
+.subItems ul li{
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+.subItems ul li:hover{
+    color: mediumblue;
+}
+
+#barraPesquisa {
+    float: left;
+    margin-left: 10px;
+    width: 630px;
+    height: 70px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+#inputPesquisa {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#inputBuscar {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#produtos {
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 630px;
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+h2{
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.containerProduto {
+    float: left;
+    margin-bottom: 7px;
+    margin-left: 12px;
+    border-radius: 7px;
+    width: 190px;
+    height: 240px;
+    transition: all 0.5s;
+}
+.containerProduto:hover{
+    border: solid 1px #000000;
+    transform: translateY(-10px);
+}
+
+.imgProduto{
+    border: solid 1px #000000;
+    width: 100px;
+    height: 120px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+
+    background-image: url(../img/camisa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+p{
+    margin: 5xp;
+    text-align: justify;
+    padding: 5px 17px;
+}
+#detalhesLoja{
+    width: inherit;
+    height: 200px;
+    float: left;
+}
+#produtosDestaque{
+    float: left;
+    width: inherit;
+    min-height: 340px;
+    height: auto;
+    overflow: hidden;
+}
+.containerDestaque{
+    float: left;
+    margin-left: 18px;
+    margin-bottom: 7px;
+    width: 190px;
+    height: 300px;
+    transition: all 0.6s;
+}
+.containerDestaque:hover{
+    border: solid 1px #000000;
+    transform: translateY(-10px);
+}
+.circulo{
+    border: solid 1px #000000;
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 180px;
+    height: 180px;
+
+    background-image: url(../img/calçaFeminina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+.saibaMais{
+    border: solid 1px #000000;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+    width: 130px;
+    height: 35px;
+    margin-left: 33px;
+    margin-top: 10px;
+    padding-top: 8px;
+    text-align: center;
+    transition: all 0.6s;
+    font-weight: bold;
+    font-size: 15px;
+}
+.saibaMais:hover{
+    width: 140px;
+    height: 40px;
+    margin-left: 27px;
+    margin-top: 15px;
+    padding-top: 8px;
+    transform: translateY(-7px);
+    font-size: 18px;
+}
+#promocao{
+    margin-top: 5px;
+    float: left;
+    width: inherit;
+    padding-top: 5px;
+    padding-left: 100px;
+    min-height: 490px;
+    height: auto;
+    overflow: hidden;
+}
+.containerPromocao{
+    float: left;
+    width: 200px;
+    height: 235px;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 17px;
+    transition: all 0.6s;
+}
+.containerPromocao:hover{
+    border: solid 1px #000000;
+    transform: translateY(-10px);
+}
+.imgDesconto{
+    width: 100px;
+    height: 100px;
+    border: solid 1px #000000;
+    margin-left: 50px;
+    margin-top: 5px;
+
+    background-image: url(../img/moleton.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h4{
+    color: red;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+h5{
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+#containerRedesSociais{
+    float: right;
+    margin-right: -110px;
+    width: 100px;
+    height: 320px;
+    margin-top: 77px;
+}
+#caixaFixa{
+    width: inherit;
+    height: inherit;
+    position: fixed;
+}
+#facebook{
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 50px;
+    margin: 7px auto;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#instagram{
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 50px;
+    margin: 7px auto;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+#google{
+    background-image: url(../img/gogle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 50px;
+    margin: 7px auto;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#linkedIn{
+    background-image: url(../img/linkedIn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 50px;
+    margin: 7px auto;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.animacaoSocial{
+    transition: all 0.7s;
+}
+.animacaoSocial:hover{
+    transform: translateY(-10px);
+    box-shadow: 7px 5px rgba(230, 230, 230, 0.8);
+}
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.8);
+    float: left;
+}
+#textFooter{
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    color: white;
+}

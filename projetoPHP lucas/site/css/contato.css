@@ -1,0 +1,103 @@
+#LojasContatos{
+    width: 100%;
+    height: 430px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-sizing: border-box;
+}
+#lojasCaixaContatos{
+    width: 100%;
+    height: inherit;
+}
+.contact{
+    width: 600px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.areaTitle-contato{
+    width: 160px;
+    height: 350px;
+    padding-top: 15px;
+    float: left;
+}
+.areaForm-contato{
+    width: 400px;
+    height: 350px;
+    padding-top: 3px;
+    padding-left: 10px;
+    float: left;
+}
+.contactUs, .message{
+    width: inherit;
+    height: 35px;
+
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 1em;
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    font-weight: bold;    
+}
+.message{
+    width: 200px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 3px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    text-align: left;  
+}
+#select{
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-top: 7px;
+}
+.inputSize{
+    width: 300px;
+}
+.entreEmContato{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+#enviar{
+   margin-left: 150px;
+}
+#caixaNossasLojas{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    float: left;
+}
+#nossasLojas{
+    width: 600px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.imagemLocal{
+    float: left;
+    width: 60px;
+    height: 50px;
+}
+.endereco{
+    width: inherit;
+    height: 60px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}

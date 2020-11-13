@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../img/logofundo/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#caixaConteudo {
+    width: 100%;
+    height: 100%;
+}
+
+.centerObject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+header h1 {
+    font-size: 1.9em;
+    margin-right: 160px;
+    color: white;
+}
+
+#logoCMS img {
+    width: 100px;
+    height: 90px;
+    margin-top: 4px;
+}
+
+#menu {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(63, 194, 199, 0.8);
+}
+
+#menu .containerMenu:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.containerMenu {
+    width: 140px;
+    height: 110px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.25em;
+    margin-left: 90px;
+}
+
+.containerMenu img {
+    margin: 0px auto;
+    width: 85%;
+    height: 75%;
+}
+
+.user {
+    width: 240px;
+    height: 120px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+#userName {
+    margin-top: 10px;
+}
+
+#userLoggout {
+    margin-left: 140px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#containerDados {
+    width: 100%;
+    min-height: 375px;
+    height: auto;
+}
+
+#dadosConteudo {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-style: italic;
+    background-color: black;
+    color: white;
+}
+
+#div_aba1 {
+    width: 100%;
+    height: 68vh;
+    color: white;
+}
+
+#div_aba2 {
+    width: 100%;
+    min-height: 68vh;
+    max-height: 68vh;
+    overflow: auto;
+}
+
+#div_aba3 {
+    width: 100%;
+    height: 68vh;
+    color: white;
+}
+
+#div_aba4 {
+    width: 100%;
+    height: 68vh;
+    display: flex;
+}
+
+#containerCadastro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+#center1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+.divUsuario {
+    width: 60%;
+    height: 27%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaCadastro {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+.fechar {
+    width: 90px;
+    height: 30px;
+    font-size: 1.7em;
+    cursor: pointer;
+    margin: 0px 10px 0px auto;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.fechar a {
+    color: black;
+}
+
+.fechar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.fechar:hover {
+    background-color: rgb(71, 71, 71);
+    text-decoration: underline;
+}
+
+.voltar {
+    width: 350px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    display: flex;
+}
+
+.voltar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+}
+
+.voltar img {
+    width: 40px;
+    height: 50px;
+    margin-right: 3px;
+}
+
+.voltar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.voltar a:hover {
+    color: rgb(255, 51, 51);
+    border-radius: 10px;
+}
+
+.centerVisualizar {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerVisualizar .caixaCadastro {
+    padding: 30px 0px;
+}
+
+.divProduto {
+    width: 35%;
+    height: 35%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerProduto {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(3, 113, 187, 0.4);
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+#caixaProduto1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.caixaCadastroProduto {
+    width: 40%;
+    height: 70%;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaCadastroProduto form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.caixaCadastroProduto form input[type="text"],
+.caixaCadastroProduto form select {
+    width: 25vw;
+    height: 35px;
+    font-size: 1.2rem;
+    margin: 7px 10px;
+    border-radius: 5px;
+}
+
+.caixaCadastroProduto form input[type="submit"] {
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#caixaProduto2 {
+    width: 45%;
+    height: 35vh;
+    overflow: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#caixaProduto3 {
+    width: 45%;
+    height: 35vh;
+    overflow: auto;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.containerLojas {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 113, 187, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#formLojas {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formLojas form input[type="text"],
+#formLojas form select {
+    width: 90%;
+    height: 70%;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+#formLojas form input[type="file"] {
+    width: 100%;
+    height: 60%;
+}
+
+#formLojas form input[type="submit"] {
+    width: 110px;
+    height: 75%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#tabelaLojas {
+    width: 58%;
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+}

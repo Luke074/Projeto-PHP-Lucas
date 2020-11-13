@@ -1,0 +1,218 @@
+.tblConsulta {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+}
+
+.tblTitulo {
+    width: 100%;
+    min-height: 40px;
+    max-height: 60px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.tblLinhas {
+    width: 100%;
+    height: 60px;
+    border: solid 1px black;
+}
+
+.tblColunas {
+    min-width: 75px;
+    max-width: auto;
+    min-height: 40px;
+    max-height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(11, 240, 202);
+    border: solid 1px black;
+    font-size: 1em;
+    text-align: center;
+}
+
+.tblColunaFixa {
+    min-width: 75px;
+    max-width: auto;
+    height: 45px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px black;
+    font-size: 1.3em;
+}
+
+.imgicon {
+    padding-top: 5px;
+    width: 38px;
+    height: 45px;
+}
+
+.tblCadastroUsuario {
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.tblLinhaTituloCadastro {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(72, 187, 226);
+    border: solid 1px #000000;
+    text-align: center;
+}
+
+.tblColunaCadastroFixa {
+    width: 25%;
+    height: 45px;
+    background-color: rgba(212, 212, 212, 0.8);
+    text-align: end;
+    font-size: 1.25em;
+    padding-right: 10px;
+}
+
+.tblColunaCadastro {
+    width: 75%;
+    height: 45px;
+    background-color: rgba(212, 212, 212, 0.8);
+}
+
+.tblInput {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.tblInputEnviar {
+    width: 20%;
+    height: 70%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    background-color: rgb(65, 219, 60);
+    font-weight: bold;
+    font-style: italic;
+}
+
+#tblSelect {
+    width: 50%;
+    height: 60%;
+    font-size: 1.05em;
+}
+
+.tblProdutos {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tblProdutosTitulo {
+    width: 100%;
+    min-height: 20px;
+    max-height: 35px;
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3em;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.tblProdutosLinha {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(72, 187, 226);
+    border: solid 1px #000000;
+    text-align: center;
+}
+
+.tblProdutosColuna {
+    min-width: 75px;
+    max-width: auto;
+    min-height: 40px;
+    max-height: auto;
+    padding: 0px 5px;
+    background-color: rgb(19, 228, 210);
+    color: black;
+    border: solid 1px black;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tblProdutosColunaFixa {
+    min-width: 150px;
+    max-width: auto;
+    min-height: 35px;
+    max-height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px black;
+    font: italic bold;
+    font-size: 1.7em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tblLojas {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tblLojasTitulo {
+    width: 100%;
+    min-height: 20px;
+    max-height: 35px;
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3em;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.tblLojasLinha {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(72, 187, 226);
+    border: solid 1px #000000;
+    text-align: center;
+}
+
+.tblLojasColuna {
+    min-width: 75px;
+    max-width: auto;
+    min-height: 40px;
+    max-height: auto;
+    padding: 0px 5px;
+    background-color: rgb(19, 228, 210);
+    color: black;
+    border: solid 1px black;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tblLojasColunaFixa {
+    min-width: 150px;
+    max-width: auto;
+    min-height: 35px;
+    max-height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px black;
+    font: italic bold;
+    font-size: 1.7em;
+    text-align: center;
+    border-radius: 10px;
+}
